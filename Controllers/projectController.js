@@ -24,7 +24,7 @@ exports.addProjects = async (req, res) => {
 
     }
 }
-//only user Project
+//only user Project(single category)
 exports.allUserProjects = async (req,res)=>{
     const userId = req.payload
     try{
@@ -35,7 +35,7 @@ exports.allUserProjects = async (req,res)=>{
     }
 }
 
-//all Project - token req
+//all Project - token req(all products)
 exports.allProjects = async (req, res) => {
     const searchKey = req.query.search
     const query = {

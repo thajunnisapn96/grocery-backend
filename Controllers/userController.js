@@ -43,7 +43,7 @@ exports.login = async(req,res)=>{
 
        if(registeredUser){
         
-        const token = jwt.sign({userId:registeredUser._id},"secretkey450")
+        const token = jwt.sign({userId:registeredUser._id},"superSecretKeyForLogin")
 
         res.status(200).json({registeredUser,token})
    
