@@ -62,7 +62,6 @@ exports.getHomeProjects = async (req,res)=> {
 }
 
 // edit project
-
 exports.editProjectController = async (req,res)=>{
     // get project id
     const {id} = req.params

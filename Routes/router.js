@@ -39,4 +39,4 @@ router.delete('/project/remove/:id',jwtMiddleware,projectController.deleteProjec
 router.put('/user/edit',jwtMiddleware,multerConfig.single(`profileImage`),userController.editUser)
 
 // export router
-module.exports = router
+module.exports = router 
